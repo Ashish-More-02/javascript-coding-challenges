@@ -15,6 +15,13 @@ const likes = (names) => {
   }
 
   return `no one likes this`;
+
+
+  //using reudce and replace methods
+  return numbers.reduce((acc,curr)=>{
+     return acc.replace('x',curr);
+  },'(xxx) xxx-xxxx')
+  
 };
 
 console.log(likes([])); // 'no one likes this'
