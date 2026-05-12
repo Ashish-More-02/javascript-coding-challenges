@@ -50,4 +50,13 @@ function reverseWords(sentence) {
 }
 
 
+// approach : first split string into every individual array elements , then use array.reverse() method and then join each element in the array you get reversed string.
+function reverseString(sentence){
+    return sentence.split("").reverse().join("");
+}
+
+
 console.log(reverseWords("  Hello  World   "));
+
+
+console.log(reverseString("hello world this is ashish"))
