@@ -4,6 +4,9 @@
 
 // it requires 2 things -> Node and linkedList ( to manage the nodes)
 
+// value = some value
+// next = the complete next node , in javascript it will be the complete object
+
 class Node{
     constructor(value,next=null){
         this.value = value;
@@ -101,7 +104,7 @@ class LinkedList{
     delete(value){
 
         // if head is null , there is nothing to delete
-        if(!this.head){
+        if(!this.head){ 
             return;
         }
 
